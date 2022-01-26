@@ -1,10 +1,8 @@
 import tensorflow as tf
 import numpy as np
-import pandas as pd
+
 from tensorflow import keras
-import matplotlib
-from matplotlib import pyplot as pl
-#TEst
+
 ## This is a simple neural network that solves the linear equation y=8x-9
 
 input_data = np.array([1.0, 2.0, 5.0, 100.0, 15.0, 22.0, 10.0, 7.0, 11, 54], dtype=float)
