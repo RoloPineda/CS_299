@@ -12,6 +12,7 @@ fashion_mnist = tf.keras.datasets.fashion_mnist
 
 index = 0
 
+
 # set number of characters per row when printing
 np.set_printoptions(linewidth=320)
 
