@@ -1,15 +1,24 @@
 import matplotlib.pyplot as plt
 import tensorflow as tf
+
+print(tf.__version__)
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
+# downloading data set
 fashion_mnist = tf.keras.datasets.fashion_mnist
-(training_images, training_labels), (test_images, test_labels) = fashion_mnist.load_data()
-#plt.imshow(training_images[0])
-#plt.show()
-#print(training_labels[0])
-#print(training_images[0])
 
-training_images = training_images / 255.0
-test_images = test_images/255.0
+# Splitting data into testing and training subsets
+(training_images, training_labels), (test_images, test_labels) = fashion_mnist.load_data()
+
+index = 42
+
+# set number of characters per row when printing
+np.set_printoptions(linewidth=320)
+
+# Print the label and image
+print(f'Label: {training_labels[index]}')
+print(f'\nImage Pixel Array:\n {training_images[index]}')
+
+# visualize the image
+plt.imshow(training_images[index])
