@@ -58,5 +58,5 @@ model.compile(optimizer = tf.optimizers.Adam(),
 # training model
 model.fit(training_images, training_labels, epochs=5)
 print("Now evaluating...\n\n\n")
-# Evaluating model on unseeing data
+# Evaluating model on unseen data
 model.evaluate(test_images, test_labels)
